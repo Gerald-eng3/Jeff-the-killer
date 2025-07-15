@@ -56,12 +56,12 @@
 </head>
 <body>
   <h1>Jeff the Killer</h1>
-  <h2>A New Origin by Gerardo 🧨</h2><button class="play-button" onclick="playStory()">▶️ Play Story</button>
+  <h2>A New Origin of the killer🔪</h2><button class="play-button" onclick="playStory()">▶️ Play Story</button>
 
   <div id="story">
     <!-- The full story text will be inserted by JavaScript -->
   </div>  <footer>
-    © 2025 Gerardo | Jeff the Killer - New Origin. “Go to sleep...” 🔪💀
+    © 2025 Gerald | Jeff the Killer - New Origin. “Go to sleep...” 🔪💀
   </footer>  <script>
     const storyText = `In a new but evil neighborhood, a kind and adorable boy named Jeff and his brother Liu lived. They were happy of their new life. They didn't question the house as they loved its beauty.
 
@@ -149,7 +149,7 @@ But as he was driving off, Jeff covered his mouth. Liu tried to scream, but only
       speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(storyText);
       utterance.rate = 1;
-      utterance.pitch = 1;
+      utterance.pitch = 0.5;
       utterance.volume = 1;
       utterance.lang = 'en-US';
       speechSynthesis.speak(utterance);
