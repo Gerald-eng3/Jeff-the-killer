@@ -38,13 +38,43 @@
       font-size: 0.9em;
       color: #777;
     }
+    .play-button {
+      display: block;
+      margin: 30px auto;
+      padding: 12px 24px;
+      background-color: #ff3c3c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .play-button:hover {
+      background-color: #c72c2c;
+    }
+  </style>
+</head>
+<body>
+  <h1>Jeff the Killer</h1>
+  <h2>A New Origin by Gerardo 🧨</h2>
+
+  <button class="play-button" onclick="playStory()">▶️ Play Story</button>
+
+  <!<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jeff the Killer - A 
+    }
   </style>
 </head>
 <body>
   <h1>Jeff the Killer</h1>
   <h2>A New Origin by Gerardo 🩸</h2>
 
-  <div class="chapter">
+  <div class="chapter 1">
     <h2>Part 1</h2>
     <p>In a new but evil neighborhood, a kind and adorable boy named Jeff and his brother Liu lived. They were happy of their new life. They didn't question the house as they loved its beauty.</p>
     <p>The father of the family, Peter, always took care of both Jeff and Liu. While the mother, Margaret, sometimes neglected Jeff. As she thought that Liu was more educated and just better. Jeff was always fueled of jealousy.</p>
@@ -59,7 +89,7 @@
     <p>They both ran away from the bloodbath, they looked behind them, seeing that people were helping them...</p>
   </div>
 
-  <div class="chapter">
+  <div class="chapter 2">
     <h2>Part 2</h2>
     <p>They were at school, Liu who started to admire Jeff for his brave actions thanked him. Jeff couldn't contain his excitement, his energy became dark and intriguing. Jeff wanted to hurt people, he wanted them to feel the same way as he did.</p>
     <p>Jeff returned home that evening. His parents asked about how his day went. Jeff exclaimed in a dark and joyful voice, "It was a wonderful day!"</p>
@@ -82,7 +112,7 @@
     <p>Jeff was burning, it was a total disaster. Jeff ran outside and fell down the stairs, everyone was pale as ghosts. Jeff fainted, as he saw his parents putting the fire out and heard sirens outside the house.</p>
   </div>
 
-  <div class="chapter">
+  <div class="chapter 3">
     <h2>Part 3 (Final)</h2>
     <p>Jeff woke up in the hospital. Bandages covered his face, he didn't know what were his surroundings. He heard a familiar voice, it was his careless mother — it was the first time she sounded so worried.</p>
     <p>She said in a sad voice, "Oh my baby! I am so sorry for what I have put you through. I have some good news, Liu got out of jail. All eye witnesses proved that Randy was the attacker."</p>
@@ -96,8 +126,22 @@
     <p>But as he was driving off, Jeff covered his mouth. Liu tried to scream, but only tiny murmurs escaped. He tried to escape, but the only thing he was able to do was to move his head. Jeff plunged the knife into Liu as he whispered, "Shhhhhh... Go to sleep...." All the fighting alerted the neighbors. The police came and found no one but dead bodies and blood.</p>
   </div>
 
+
   <footer>
     © 2025 Gerardo | Jeff the Killer - New Origin. “Go to sleep...” 🔪💀
   </footer>
+
+  <script>
+    function playStory() {
+      const storyText = `In a new but evil neighborhood, a kind and adorable boy named Jeff and his brother Liu lived. They were happy of their new life... Jeff plunged the knife into Liu as he whispered, 'Shhhhhh... Go to sleep....'`;
+      const utterance = new SpeechSynthesisUtterance(storyText);
+      utterance.rate = 1;
+      utterance.pitch = 1;
+      utterance.volume = 1;
+      utterance.lang = 'en-US';
+      speechSynthesis.cancel();
+      speechSynthesis.speak(utterance);
+    }
+  </script>
 </body>
 </html>
