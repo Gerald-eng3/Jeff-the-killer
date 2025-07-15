@@ -63,6 +63,7 @@
   </div>  <footer>
     © 2025 Gerardo | Jeff the Killer - New Origin. “Go to sleep...” 🔪💀
   </footer>  <script>
+    function playStory() {
     const storyText = `In a new but evil neighborhood, a kind and adorable boy named Jeff and his brother Liu lived. They were happy of their new life. They didn't question the house as they loved its beauty.
 
 The father of the family, Peter, always took care of both Jeff and Liu. While the mother, Margaret, sometimes neglected Jeff. As she thought that Liu was more educated and just better. Jeff was always fueled of jealousy.
@@ -145,11 +146,11 @@ But as he was driving off, Jeff covered his mouth. Liu tried to scream, but only
 
     document.getElementById("story").innerText = storyText;
 
-    function playStory() {
+
       speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(storyText);
       utterance.rate = 1;
-      utterance.pitch = 1;
+      utterance.pitch = 0.5;
       utterance.volume = 1;
       utterance.lang = 'en-US';
       speechSynthesis.speak(utterance);
